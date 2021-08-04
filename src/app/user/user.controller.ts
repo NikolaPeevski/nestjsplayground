@@ -3,7 +3,6 @@ import {
   Get,
   Post,
   Body,
-  HttpException,
   HttpStatus,
   ParseIntPipe,
   Param

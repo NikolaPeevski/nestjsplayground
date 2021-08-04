@@ -21,6 +21,6 @@ export class UserService {
   }
 
   private isUniqueName(userName: string): boolean {
-    return this.users.filter(({ name }) => name === userName).length === 0;
+    return this.users.every(({ name }) => name !== userName);
   }
 }
